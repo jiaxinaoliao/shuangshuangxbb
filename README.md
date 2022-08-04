@@ -14,6 +14,8 @@ wsl2  ubuntu22.04 Git 不用fast
 
   ``git clone [url]``也可以自定义本地仓库名字``git clone [url] dirName``
 
+  不用自己手动创建文件夹（自动生成）
+
 ## 2. 完整的一次提交流程
 
 ### 2.1 进入子目录
