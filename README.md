@@ -2,9 +2,12 @@
 
 
 
-wsl2  ubuntu22.04 Git 不用fast
+wsl2  ubuntu22.04 Git 
+
+稳定连接github.com（写在后面）
 
 ## 1. 快速入门
+
 
 ### 1.1 创建仓库
 
@@ -89,3 +92,39 @@ wsl2  ubuntu22.04 Git 不用fast
 - 另外，也可以把分支推送到远程仓库 `git push <远程主机名> <本地分支名>:<远程分支名>`
 
 ``git push origin test:test``
+
+
+---------------------------------------------
+
+## 1. 利用fastgithub
+
+https://github.com/dotnetcore/FastGithub
+
+fastgithub_linux-x64
+
+可以利用windows下载通过``sudo cd``移动到linux子系统下
+
+在子系统中文件夹内``./fastgithub``运行
+
+**运行之前**
+
+在~/.bashrc最后添加地址和端口
+
+``export http_proxy=127.0.0.1:38457``
+
+``export https_proxy=127.0.0.1:38457``
+
+  添加后``source ~/.bashrc``
+  
+  之后运行fastgithub
+
+## 2. 利用微软DNS（不稳定）
+
+**先将``~/.bashrc``中最后的地址#注释掉**
+
+windows更改手动TPC/IPv4代理
+
+4.2.2.1和4.2.2.2
+
+
+
