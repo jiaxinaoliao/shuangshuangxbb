@@ -69,7 +69,7 @@ wsl2  ubuntu22.04 Git
 
 - 新建本地分支
 
-``git branch test
+``git branch test``
 
 - 切换到 `test` 分支
 
