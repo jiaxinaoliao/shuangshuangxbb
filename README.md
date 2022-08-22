@@ -128,6 +128,14 @@ windows更改手动TPC/IPv4代理
 
 
 
+## 3. 身份认证
+
+用`gh auth login`
+
+验证验证码即可进行擦写
+
+
+
 ## 4. oh-my-zsh
 
 git
