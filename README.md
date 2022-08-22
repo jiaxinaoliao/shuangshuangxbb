@@ -115,7 +115,7 @@ fastgithub_linux-x64
 ``export https_proxy=127.0.0.1:38457``
 
   添加后``source ~/.bashrc``
-  
+
   之后运行fastgithub
 
 ## 2. 利用微软DNS（不稳定）
@@ -128,3 +128,14 @@ windows更改手动TPC/IPv4代理
 
 
 
+## 4. oh-my-zsh
+
+git
+
+定义了有关 git 的 alias常用的有
+
+- gaa = git add --all
+- gcmsg = git commit -m
+- ga = git add
+- gst = git status
+- gp = git push
