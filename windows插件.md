@@ -34,6 +34,8 @@ sudo dpkg-reconfigure locales
 
 sudo apt install ttf-wqy-microhei ttf-wqy-zenhei xfonts-intl-chinese
 
+
+
 ------------------------------------------
 
 插件OBS studio专业录屏软件
@@ -41,4 +43,10 @@ sudo apt install ttf-wqy-microhei ttf-wqy-zenhei xfonts-intl-chinese
 简单上手华为控制中心节省性能
 
 sspacesniffer软件检查磁盘用量
+
+
+
+----
+
+关闭华为管家增加虚拟内存
 
