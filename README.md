@@ -147,3 +147,19 @@ git
 - ga = git add
 - gst = git status
 - gp = git push
+
+
+
+--------------
+
+利用git fls推送大文件
+
+- 当我们下载好git-lfs之后，需要开启/初始化lsf功能：`git lfs install`，之后我们看到`Git LFS initialized.`说明已经初始化完成了！
+- 这里推荐2种方式将大型文件添加到lfs管理：
+- 文件形式：`git lfs track *.pkl`
+- 文件夹形式：`git lsf track model/**`（包含文件夹本身的）；`git lsf track model/*`（不包含文件夹本身的）
+- 接下来我们就可以看到在git本地仓库中git给我们构建了一个文件`.gitattributes`
+- 查看lfs追踪了哪些文件：`git lfs ls-files`
+- 下面就是把新的文件添加到缓存区：`git add .`
+- 提交缓存区内的文件到本地仓库：`git commit -m "xxxxx"`
+- 将本地的大型模型通过git推送到gitlfs中管理：`git push `
