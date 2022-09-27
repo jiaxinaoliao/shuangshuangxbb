@@ -121,6 +121,17 @@ wsl2  ubuntu22.04 Git
 
 
 
+git删除tag
+
+本地
+
+`git tag -d 标签名 `
+
+远程
+
+`git push origin :refs/tags/标签名`
+
+
 
 ---------------------------------------------
 
@@ -191,3 +202,15 @@ git
 - 下面就是把新的文件添加到缓存区：`git add .gitattributes`
 - 提交缓存区内的文件到本地仓库：`git commit -m "xxxxx"`
 - 将本地的大型模型通过git推送到gitlfs中管理：`git push origin master `
+
+
+
+-----------------
+
+powershell中实现linux的cp -rf命令
+
+需要在`cp 文件 目标文件 -recurse -force`
+
+cp——Copy-Item
+
+r和f不能缩写
