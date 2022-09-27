@@ -1,4 +1,8 @@
-# firstgithuborigin
+# FirstGithubOrigin
+
+
+
+git的常用命令
 
 
 
@@ -89,9 +93,33 @@ wsl2  ubuntu22.04 Git
 
 ``git branch -d test``
 
+删除远程分支
+
+`git push origin -d release`
+
 - 另外，也可以把分支推送到远程仓库 `git push <远程主机名> <本地分支名>:<远程分支名>`
 
 ``git push origin test:test``
+
+
+
+### 7. release版本
+
+用`git tag `
+
+`git tag -a v0.0.1 -m "my first tag-release"`
+
+-a 表示标签 -m 后面是描述（可以用日期时间）
+
+用`git tag`查看会出现v0.0.1
+
+用`git show v0.0.1`显示此标签的所有信息
+
+用`git push origin v0.0.1`推送到仓库
+
+`git push origin tag`推送全部
+
+
 
 
 ---------------------------------------------
@@ -160,6 +188,6 @@ git
 - 文件夹形式：`git lsf track model/**`（包含文件夹本身的）；`git lsf track model/*`（不包含文件夹本身的）
 - 接下来我们就可以看到在git本地仓库中git给我们构建了一个文件`.gitattributes`
 - 查看lfs追踪了哪些文件：`git lfs ls-files`
-- 下面就是把新的文件添加到缓存区：`git add .`
+- 下面就是把新的文件添加到缓存区：`git add .gitattributes`
 - 提交缓存区内的文件到本地仓库：`git commit -m "xxxxx"`
-- 将本地的大型模型通过git推送到gitlfs中管理：`git push `
+- 将本地的大型模型通过git推送到gitlfs中管理：`git push origin master `
