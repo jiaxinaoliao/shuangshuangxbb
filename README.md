@@ -214,3 +214,10 @@ powershell中实现linux的cp -rf命令
 cp——Copy-Item
 
 r和f不能缩写
+
+-------
+
+谷歌翻译
+
+203.208.40.66 translate.google.com
+        203.208.40.66 translate.googleleapis.com
