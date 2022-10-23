@@ -117,7 +117,9 @@ wsl2  ubuntu22.04 Git
 
 用`git push origin v0.0.1`推送到仓库
 
-`git push origin tag`推送全部
+`git push origin --tag`推送全部
+
+或者`git push --tag`
 
 
 
