@@ -223,3 +223,11 @@ r和f不能缩写
 
 203.208.40.66 translate.google.com
         203.208.40.66 translate.googleleapis.com
+
+
+
+# powersehll
+
+Remove-Item (Get-PSReadlineOption).HistorySavePath
+
+运行命令清除历史记录
