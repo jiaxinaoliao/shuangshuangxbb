@@ -231,3 +231,29 @@ r和f不能缩写
 Remove-Item (Get-PSReadlineOption).HistorySavePath
 
 运行命令清除历史记录
+
+```powershell
+          Get-History        Gets the command history.
+
+          Invoke-History     Runs a command in the command history.
+
+          Add-History          Adds a command to the command history.
+
+          Clear-History         Deletes commands from the command history.
+```
+
+
+
+可以使用`Get-PSReadlineOption`查看具体的`history`文件路径，也可以通过Set-PSReadlineOption命令来修改这个路径。
+
+PowerShell并不会无止境的记录历史命令，可以通过使用`$MaximumHistoryCount`保留自变量来查看系统默认可以记录多少历史命令：默认4096
+
+也可以直接给这个变量赋一个阿拉伯数字设置你想设置的上限值，比如设置为1000
+
+`$MaximumHistoryCount = 1000`
+
+```powershell
+ctrl+j和h上下行
+ctrl+l清除上半屏幕
+```
+
