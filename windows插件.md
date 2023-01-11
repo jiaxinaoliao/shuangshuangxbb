@@ -40,3 +40,8 @@ sspacesniffer软件检查磁盘用量
 
 关闭华为管家增加虚拟内存
 
+
+
+
+
+arch linux
