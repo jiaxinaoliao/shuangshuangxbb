@@ -257,3 +257,117 @@ ctrl+j和h上下行
 ctrl+l清除上半屏幕
 ```
 
+
+
+
+
+# 杂
+
+## 程序
+
+移动硬盘
+
+adobe全家桶
+
+office365
+
+
+
+---------------------
+
+wsl
+
+ubuntu
+
+区域设置  更改语言中文
+
+```wsl
+sudo apt install locales
+
+sudo dpkg-reconfigure locales
+
+sudo apt install ttf-wqy-microhei ttf-wqy-zenhei xfonts-intl-chinese
+```
+
+
+
+kali
+
+```wsl
+安装好 kali-linux 以后先执行 
+sudo apt install locales
+sudo dpkg-reconfigure locales 
+用上下键将光标移至“zh_CN.UTF-8 UTF-8"项按空格键选择后选择”ok”
+重启（wsl --shutdown）之后就是中文了
+apt update apt upgrade
+```
+
+
+
+------------------------------------------
+
+插件OBS studio专业录屏软件
+
+简单上手华为控制中心节省性能
+
+sspacesniffer软件检查磁盘用量
+
+
+
+----
+
+关闭华为管家增加虚拟内存
+
+
+
+
+
+arch linux
+
+
+
+
+
+# wsl转移
+
+```wsl
+1. 查看已安装版本
+ 
+# wsl -l --all -v
+  NAME          STATE           VERSION
+* kali-linux    Running         2
+ 
+ 
+2.导出分发版为tar文件到E盘
+# wsl --export kali-linux E:\kali-linux.tar
+ 
+ 
+3. 注销当前分发版
+# wsl --unregister kali-linux
+ 
+ 
+4. 重新导入并安装WSL在D盘
+# wsl --import kali-linux E:\kali-linux  E:\kali-linux.tar --version 2
+ 
+ 
+5. 删除wsl-ubuntu20.04.tar
+# del E:\kali-linux.tar
+```
+
+默认用户
+
+```wsl
+kali config --default-user root
+```
+
+
+
+注：kali的kex
+
+```wsl
+vncserver -localhost no
+kex -s
+```
+
+
+
